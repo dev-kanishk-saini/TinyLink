@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "\"Tinylink app server.\"",
+  "keywords": [
+    "link",
+    "code",
+    "url"
+  ],
+  "license": "ISC",
+  "author": "Kanishk Saini",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
