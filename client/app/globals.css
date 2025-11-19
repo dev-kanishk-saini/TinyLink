@@ -1,0 +1,63 @@
+/* @import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base dark styling */
+:root {
+  color-scheme: dark;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply bg-surface-900 text-gray-200 antialiased;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* subtle card */
+.card {
+  @apply bg-surface-800 border border-slate-800 rounded-lg shadow-sm;
+}
+
+/* accent button */
+.btn-primary {
+  @apply bg-accent-500 text-black font-medium px-4 py-2 rounded-md shadow-sm hover:brightness-95;
+}
+
+/* muted button */
+.btn-ghost {
+  @apply text-gray-300 px-3 py-1 rounded hover:bg-slate-800;
+}
+
+/* table scroll */
+.table-scroll {
+  overflow: auto;
+}
