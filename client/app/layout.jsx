@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 
 
             <div className="flex items-center gap-3">
-               <a href="http://localhost:5000/healthz" target="_blank" className="btn-ghost">Check Health</a>
+               <a href={`${process.env.NEXT_PUBLIC_API_URL}/healthz`} target="_blank" className="btn-ghost">Check Health</a>
               <a href="https://github.com/dev-kanishk-saini/TinyLink" target="_blank" className="btn-ghost">Source</a>
               {/* <a className="btn-primary" href="#">Create</a> */}
             </div>
