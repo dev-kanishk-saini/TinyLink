@@ -42,15 +42,16 @@ export default function LinksTableDark({ links = [] }) {
 
     <div className="card p-6 overflow-x-auto">
   
-
-  <table className="min-w-full divide-y table-auto border border-white rounded-lg overflow-hidden">
+ 
+ <table className="min-w-full divide-y table-auto border border-white rounded-lg overflow-hidden">
     <thead className="bg-slate-800 text-slate-400 text-sm uppercase">
       <tr>
-        <th className="px-8 py-5 text-left">Code</th>
-        <th className="px-8 py-5 text-left">Target URL</th>
-        <th className="px-8 py-5 text-left">Clicks</th>
-        <th className="px-8 py-5 text-left">Last Clicked</th>
-        <th className="px-8 py-5 text-left">Actions</th>
+ <th className="px-8 py-5 text-left" style={{ width: '150px' }}>Code</th>
+<th className="px-8 py-5 text-left" style={{ width: '400px' }}>Target URL</th>
+<th className="px-8 py-5 text-left" style={{ width: '100px' }}>Clicks</th>
+<th className="px-8 py-5 text-left" style={{ width: '200px' }}>Last Clicked</th>
+<th className="px-8 py-5 text-left" style={{ width: '250px' }}>Actions</th>
+
       </tr>
     </thead>
 
@@ -60,21 +61,21 @@ export default function LinksTableDark({ links = [] }) {
           key={l.code}
           className="hover:bg-slate-900 hover:shadow-md transition-all duration-150"
         >
-          <td className="px-8 py-5 font-mono text-base text-white">{l.code}</td>
+          <td className="px-8 py-5 font-mono text-base text-white text-center">{l.code}</td>
 
-          <td className="px-8 py-5 max-w-4xl truncate text-slate-200 text-base">
+          <td className="px-8 py-5 max-w-4xl truncate text-slate-200 text-base text-center">
             {l.url}
           </td>
 
-          <td className="px-8 py-5 text-slate-300 font-medium text-base">{l.clicks}</td>
+          <td className="px-8 py-5 text-slate-300 font-medium text-base text-center">{l.clicks}</td>
 
-          <td className="px-8 py-5 text-slate-300 text-base">
+          <td className="px-8 py-5 text-slate-300 text-base text-center">
             {l.last_clicked
               ? new Date(l.last_clicked).toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
               : "—"}
           </td>
 
-          <td className="px-8 py-5 flex flex-wrap gap-4 items-center">
+          <td className="px-8 py-5 flex flex-wrap gap-4 items-center justify-center">
             <a
               href={`${API_BASE}/${l.code}`}
               target="_blank"
@@ -111,9 +112,12 @@ export default function LinksTableDark({ links = [] }) {
         </tr>
       ))}
     </tbody>
-  </table>
-
+  </table> 
+   
+    
+   
 </div>
+ 
 
   );
 }
