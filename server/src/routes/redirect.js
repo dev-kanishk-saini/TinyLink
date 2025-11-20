@@ -9,6 +9,7 @@ const router = express.Router();
 router.get("/:code", async (req, res, next) => {
 try {
 const { code } = req.params;
+console.log(code);
 // avoid catching API paths such as /api/*
 if (code.startsWith("api")) return next();
 

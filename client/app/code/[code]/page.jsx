@@ -177,7 +177,7 @@ export default function CodePage(props) {
           </div>
 
           <div className="text-right">
-            <a className="btn-primary inline-block" href={`${BASE_URL}/${link.code}`} target="_blank" rel="noreferrer">Open Link</a>
+            <a className="btn-primary inline-block" href={`${API_BASE}/${link.code}`} target="_blank" rel="noreferrer">Open Link</a>
           </div>
         </div>
 
