@@ -169,12 +169,19 @@ export default async function Page() {
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold text-white">Dashboard</h1>
-        <p className="text-sm text-slate-400">Dark professional dashboard</p>
+        <h1 className="text-2xl font-semibold text-white">Create Your Code.</h1>
+        {/* <p className="text-sm text-slate-400">Dark professional dashboard</p> */}
+         <p className="text-sm text-slate-500 mt-1">
+      We'll create a short link and track clicks.
+    </p>
       </div>
 
       <div className="card p-4">
         <LinkFormDark />
+      </div>
+ <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-semibold text-white">DashBoard.</h1>
+        {/* <p className="text-sm text-slate-400">Dark professional dashboard</p> */}
       </div>
 
       <LinksTableDark links={links} />
