@@ -1,8 +1,4 @@
-Absolutely — here’s a clean, professional **README.md** written specifically for your project **TinyLink**.
-You can copy-paste this directly into your repo.
-If you want badges, branding, or images later, I can help add those too.
 
----
 
 # 📎 TinyLink — URL Shortener with Analytics
 
